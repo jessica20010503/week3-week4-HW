@@ -1,0 +1,44 @@
+.productrow__img{
+    height: 255px;
+    //為了使圖片在iPad上高度不會因太小導致模糊化，故將照片的斷點設在iPad以下的斷點 - 767px
+    @media (max-width:767px) {
+        height: 165px;
+    }
+    
+}
+.navbar__text{
+    color: #fff;
+    &--hover{
+        &:hover{
+            color:#E0E0E0;
+            text-shadow: 0.1em 0.1em 0.6em 	#FFED97;
+        }  
+    }
+    &--active{
+        &:active{
+            color:#ADADAD;
+            text-shadow: 0.1em 0.1em 0.6em 	#FFED97;
+        }
+    }
+}
+
+.icon--color{
+    color: #916019;
+    &--hover{
+        &:hover{
+            color:#EA0000;
+            text-shadow: 0.1em 0.1em 0.2em black;
+        }
+    }
+}
+.page__link--color{
+    color: #000;
+    &--hover{
+        &:hover{
+            color: #fff;
+            background: rgba(145, 96, 25,0.4);
+            border-radius: 100%;
+            text-shadow: 0.1em 0.1em 0.2em black;
+        }
+    }
+}
